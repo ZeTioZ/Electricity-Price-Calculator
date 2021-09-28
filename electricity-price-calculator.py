@@ -38,13 +38,13 @@ def calculate_price(electricity):
 
 result = calculate_price(kwh);
 
-print("Day H.T.V.A: " + str(result[1]) + " €")
-print("Night H.T.V.A: " + str(result[2]) + " €")
-print("Total H.T.V.A: " + str(result[0]) + " €")
+print("Day NO V.A.T: " + str(result[1]) + " €")
+print("Night NO V.A.T: " + str(result[2]) + " €")
+print("Total NO V.A.T: " + str(result[0]) + " €")
 print("------------------------------------")
-print("Day T.V.A: " + str(int((result[1]*1.21)*100)/100) + " €")
-print("Night T.V.A: " + str(int((result[2]*1.21)*100)/100) + " €")
-print("Total T.V.A: " + str(int((result[0]*1.21)*100)/100) + " €")
+print("Day V.A.T: " + str(int((result[1]*1.21)*100)/100) + " €")
+print("Night V.A.T: " + str(int((result[2]*1.21)*100)/100) + " €")
+print("Total V.A.T: " + str(int((result[0]*1.21)*100)/100) + " €")
 print("------------------------------------")
-print("Already paid: " + str(already_paid) + " €")
-print("Total to pay: " + str((int((result[0]*1.21)*100)/100) - already_paid) + " €")
+print("Already paid V.A.T: " + str(already_paid) + " €")
+print("Total to pay V.A.T: " + str((int((result[0]*1.21)*100)/100) - already_paid) + " €")
